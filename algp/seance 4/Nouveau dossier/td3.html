@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Afficher un nombre en PHP</title>
+</head>
+<body>
+   <!-- Formulaire HTML -->
+   <form method="POST" action="">
+    <label for="name">Entrez votre nom :</label>
+    <input type="text" id="name" name="name" required>
+    <input type="submit" value="Envoyer">
+</form>
+
+<?php
+// Vérifier si le formulaire a été soumis
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérer la valeur saisie dans le champ 'name'
+    $name = $_POST['name'];
+    
+    // Afficher le nom soumis
+    echo "<p>Bonjour, " . htmlspecialchars($name) . " !</p>";
+}
+?>
+</body>
+</html>

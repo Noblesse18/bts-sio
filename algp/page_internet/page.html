@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation d'Avions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003366;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 10px;
+            background-image: url('/page_internet/image/aeoroport.jpeg'); /* Image de fond */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            margin: 15px 0;
+        }
+        .card p {
+            padding: 0 10px;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            background-color: #004080;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Air Showcase</h1>
+        <p>Découvrez les avions les plus emblématiques du monde</p>
+    </header>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#avion">Avion et vol </a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h2>Explorez le ciel avec nous</h2>
+        <p>De l'aviation commerciale aux jets privés, nous vous présentons les meilleurs modèles.</p>
+    </div>
+    <div class="container">
+        <h2 id="avion">Nos Avions</h2>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Avion 1">
+            <h3>Boeing 747</h3>
+            <p>Un avion de ligne révolutionnaire connu pour sa capacité et sa performance.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Avion 2">
+            <h3>Airbus A380</h3>
+            <p>Le plus grand avion commercial, offrant un luxe sans égal dans les airs.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Avion 3">
+            <h3>Concorde</h3>
+            <p>L'avion supersonique légendaire qui a marqué l'histoire de l'aviation.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Air Showcase. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
