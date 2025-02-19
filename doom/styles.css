@@ -1,0 +1,73 @@
+
+body,html {
+background-image: url('doom-eternal-wall.jpg');
+background-size: cover;
+background-position: center;
+height: 100%;
+font-family: Arial, sans-serif;
+display: contents;
+justify-content: center;
+align-items: center;
+}
+
+h1,form {
+text-align: center;
+color: goldenrod;
+}
+
+.form-container {
+    position: relative;
+    bottom: -34%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir */
+    height: 40%;
+    width: 22%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+li {
+margin-bottom: 15px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+color: white;
+}
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: goldenrod;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ffc107;
+        }
