@@ -1,0 +1,104 @@
+.form-contact {
+    max-width: 550px;
+    margin: 60px auto; /*center le form*/
+    padding: 25px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.form-contact h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* CORRECTION PRINCIPALE : Cibler directement input et textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: white;
+    transition: border-color 0.3s ease;
+    
+    /* ESSENTIEL pour l'alignement */
+    box-sizing: border-box;
+    
+    /* Supprime les styles par défaut du navigateur */
+    margin: 0;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit; 
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.submit-btn:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-contact {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 90%;
+    }
+    
+    .form-contact h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 16px; /* Évite le zoom sur iOS */
+    }
+}

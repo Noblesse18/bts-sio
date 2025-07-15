@@ -1,0 +1,17 @@
+/* App.css */
+.App {
+  min-height: 100vh;
+}
+
+section {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(even) {
+  background-color: #f5f5f5;
+}

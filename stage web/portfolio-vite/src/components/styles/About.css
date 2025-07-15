@@ -1,0 +1,115 @@
+/* Solution 1: Flexbox (Recommandée) */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+      width: 200px;
+      height: auto;
+      overflow: hidden; /*empeche le debordement de l'image */
+      border-radius: 10%; /* Pour un cadre rond (optionnel) */
+      border: 2px solid #ccc;
+}
+
+.img-about {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /*garde les proportions de l'image*/
+      
+}
+
+.img-about:hover {
+  
+
+  transition: transform 0.3s ease; /*transition progressif*/
+
+ transform: scale(1.5); /* puissance du zoom*/
+}
+
+
+.presentation h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.presentation p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .about-image {
+    max-width: 300px;
+  }
+  
+  .presentation h2 {
+    font-size: 2rem;
+  }
+}
+
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+
+
+#about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.about-image {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+ 
+}
+
+.presentation {
+  float: right;
+  width: 45%;
+}
+
+@media (max-width: 768px) {
+  .about-image,
+  .presentation {
+    float: none;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .about-image {
+    margin-bottom: 30px;
+  }
+}

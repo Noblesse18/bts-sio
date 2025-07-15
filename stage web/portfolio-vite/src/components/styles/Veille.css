@@ -1,0 +1,15 @@
+
+.veilletech-main {
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 40px 20px; /* Ajout de padding pour l'esthétique */
+    margin: 60px auto; /* Centrer la section */
+    max-width: 1200px;
+    
+}
+
+.h2 {
+    text-align: center;
+
+}

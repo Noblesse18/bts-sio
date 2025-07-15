@@ -1,0 +1,36 @@
+.navmain {
+
+  padding: 1rem 10px;
+  margin: 0%;
+  margin-top: 10px;
+  position: sticky;
+  top: 0%; /*position en haut*/
+  left: 22%; /*position en au centre*/
+  width: 50%;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 20px
+}
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  
+}
+
+.navlist li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  
+}
+
+.navlist li a:hover {
+  color: #61dafb; /* couleur React :) */
+}
